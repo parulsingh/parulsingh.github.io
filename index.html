@@ -6,218 +6,773 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Docs</title>
+	<title>MStone - Resume Portfolio</title>
 
 	<!-- CSS -->
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-	<link href="assets/css/prettify.css" rel="stylesheet">
+	<!-- Owl Carousel -->
+	<link href="assets/css/owl.theme.css" rel="stylesheet">
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+
+	<!-- Magnific-popup lightbox -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+	<!-- Simple text rotator -->
+	<link href="assets/css/simpletextrotator.css" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+	<!-- Animate css -->
+	<link href="assets/css/animate.css" rel="stylesheet">
 
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-
 </head>
 <body>
 
-	<div class="container main">
-		<div class="row">
+	<div class="wrapper">
 
-			<div class="col-md-3">
+		<!-- Preloader -->
 
-				<div class="sidebar hidden-print my_affix" role="complementary" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
-					<ul class="nav sidenav">
-						<li class="active"><a href="#introduction">Introduction</a></li>
-						<li class="">
-							<a href="#customization">Customization</a>
-							<ul class="nav">
-								<li class=""><a href="#preloader">Preloader</a></li>
-								<li class=""><a href="#change-the-background">Change the background</a></li>
-								<li class=""><a href="#wow-animation">Wow-animation</a></li>
-								<li class=""><a href="#text rotator">Text rotator</a></li>
-								<li class=""><a href="#contact">Configuring Contact form</a></li>
-							</ul>
-						</li>
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"><h4>Mark Stone</h4></div>
+			</div>
+		</div>
+
+		<!-- Navigation start -->
+
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Mark Stone</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#intro">home</a></li>
+						<li><a href="#profile">Profile</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 
 			</div>
+		</nav>
 
-			<div class="col-md-9">
+		<!-- Navigation end -->
 
-				<section class="header">
-					<h1>Docs.</h1>
-				</section>
+		<!-- Intro section start -->
 
-				<section class="section">
+		<section id="intro" class="section">
 
-					<h2 id="introduction">Introduction</h2>
-					<h4>Hi customer!</h4>
-					<p>Thank you for choosing this template. If you have any questions please feel free to email <a href="mailto:web-master72@yandex.ru">here</a>.</p>
+			<div class="container">
 
-					<!-- Customization -->
+				<div class="row">
 
-					<h2 id="customization">Customization</h2>
+					<div class="col-md-12">
 
-					<h3 id="preloader">Preloader</h3>
-					<p>Enter your name (<code>index.html</code>): </p>
+						<div class="hello wow bounceInDown">
+							<h1>Hello, I'm Mark Stone</h1>
+							<h3><span class="rotate">Visual Designer. | Front-end Developer. | C# Programmer.</span></h3>
+						</div>
 
-<pre class="prettyprint lang-js">
-&lt;!-- Preloader --&gt;
+						<a href="#profile">
+							<div class="mouse-icon">
+								<div class="wheel"></div>
+							</div>
+						</a>
 
-&lt;div id="preloader"&gt;
-    &lt;div id="status"&gt;
-        &lt;div class="status-mes"&gt;&lt;h4&gt;Mark Stone&lt;/h4&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-					<p>You can change preloader image (<code>style.css</code>):</p>
-<pre class="prettyprint lang-css">
-#status, .status-mes {
-	background-image: url(../images/488.GIF);
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 200px;
-	left: 50%;
-	margin: -100px 0 0 -100px;
-	position: absolute;
-	top: 50%;
-	width: 200px;
-}
-</pre>
-					<p>Change <code>background-image</code></p>
+					</div>
 
-					<!-- Change the background -->
+				</div><!-- .row -->
 
-					<h3 id="change-the-background">Change the background</h3>
-					<p>To change the background image in the file <code>assets/js/custom.js</code> change <code>assets/images/bg1.jpg</code>  on any other image.</p>
+			</div><!-- .container -->
 
-<pre class="prettyprint lang-js">
-/* ---------------------------------------------- /*
- * Background image
-/* ---------------------------------------------- */
+		</section>
 
-$.backstretch(['assets/images/bg1.jpg']);
-</pre>
+		<!-- Intro section end -->
 
-					<p>To use slideshow:</p>
+		<!-- Profile contact callout section -->
 
-<pre class="prettyprint lang-js">
-$.backstretch([
-	'assets/images/bg1.jpg',
-	'assets/images/bg2.jpg',
-	'assets/images/bg3.jpg'
-], {duration: 3000, fade: 750});
-</pre>
+		<section id="profile-contact">
 
-					<!-- WOW Animation -->
+			<div class="container">
 
-					<h3 id="wow-animation">WOW Animation</h2>
+				<div class="row">
 
-					<p>Animations When You Scroll. Add class to any element <code>wow</code>, then add class of <a href="http://daneden.github.io/animate.css/">animations</a>.</p>
+					<div class="col-sm-4 wow bounceInLeft">
+						<div class="profile-item">
+							<i class="fa fa-envelope-o"></i>
+							<h5><a href="#">markstone@some.com</a></h5>
+						</div>
+					</div>
 
-					<p><b>Example #1: </b></p>
+					<div class="col-sm-4 wow bounceInUp">
+						<div class="profile-item">
+							<i class="fa fa-phone"></i>
+							<h5>(1234) 1234-5678-1011</h5>
+						</div>
+					</div>
 
-<pre class="prettyprint lang-html">
-&lt;p class="wow fadeInUp"&gt;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.&lt;/p&gt;
-</pre>
+					<div class="col-sm-4 wow bounceInRight">
+						<div class="profile-item">
+							<i class="fa fa-map-marker"></i>
+							<h5>144 Some Street, Some City, Some Country</h5>
+						</div>
+					</div>
 
-					<p><b>Example #2: </b></p>
+				</div><!-- .row -->
 
-<pre class="prettyprint lang-html">
-&lt;div class="col-md-4 col-sm-4 wow fadeInRight"&gt;
-	...
-&lt;/div&gt;
-</pre>
-					<p><b>Example #3: </b></p>
-<pre class="prettyprint lang-html">
-&lt;div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay=".6s" &gt;
-	...
-&lt;/div&gt;
-</pre>
-				<p>Use <code>data-wow-delay</code> for delay.</p>
-					<!-- Text rotator -->
+			</div><!-- .container -->
 
-					<h3 id="text rotator">Text rotator</h3>
+		</section>
 
-					<p>You can use Text rotator:</p>
+		<!-- Profile contact callout section -->
 
-					<p><b>Example: </b></p>
+		<!-- Profile section start -->
 
-<pre class="prettyprint lang-html">
-&lt;span class="rotate"&gt;Visual Designer. | Front-end Developer. | C# Programmer.&lt;/span&gt;
-</pre>
-				<p>Use "<code>|</code>" separator.</p>
+		<section id="profile" class="section">
 
-				<p>Config text rotator in <code>assets/custom.js</code>:</p>
+			<div class="container">
 
-<pre class="prettyprint lang-js">
-/* ---------------------------------------------- /*
- * Rotate
-/* ---------------------------------------------- */
+				<div class="row">
 
-$(".rotate").textrotator({
-    animation: "dissolve",
-    separator: "|",
-    peed: 3000
-});
-</pre>
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>Mark Stone</h2>
+						<p>Visual Designer. Front-end Developer. C# Programmer.</p>
+					</div>
 
-				<!-- Configuring Contact form -->
+					<div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
+						<img class="avatar" src="assets/images/photo.jpg" alt="">
+					</div>
 
-				<h3 id="contact">Configuring Contact form</h3>
+					<div class="col-md-3 col-sm-6 wow bounceInUp">
 
-				<p>Open the file <code>assets/php/contact.php</code> and enter your data:</p>
+						<div class="profile-widget">
+							<h3>Skillset</h3>
 
-				<p><b>Example: </b></p>
+							<h5>UX Design</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-off"></div>
+							</div>
 
-<pre class="prettyprint lang-basic">
-// Contact
-$to = 'web-master72@yandex.ru';
-$subject = 'Subject here...';
-</pre>
-<p></p>
+							<h5>HTML / CSS3 / SASS</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-off"></div>
+								<div class="skill-rate-off"></div>
+							</div>
 
-				<p>If contact form not working:</p>
+							<h5>Javascript</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+							</div>
 
-<pre class="prettyprint lang-basic">
-&lt;?php
-    mail('you@yourmail.com','Test mail','The mail function is working!');
-    echo 'Mail sent!';
-?&gt;
-</pre>
-<p></p>
-				<p>1. Save this code as mailtest.php</p>
-				<p>2. change you@yourmail.com to your e-mail address</p>
-				<p>3. upload mailtest.php to your server</p>
-				<p>4. open mailtest.php in your browser (http://yourwebsite.com/mailtest.php)</p>
-				<p>5. check your inbox to see if a test message arrived.</p>
+							<h5>Ajax</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-off"></div>
+								<div class="skill-rate-off"></div>
+								<div class="skill-rate-off"></div>
+							</div>
+						</div>
 
-				<p>If it works:</p>
+						<div class="profile-widget">
+							<h3>Social Profiles</h3>
+							<ul class="widget-social">
+								<li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+								<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
 
-				<p>1. double-check your form script for errors (like e-mail address misspelling)</p>
-				<p>2. use the same e-mail address as your form recipient</p>
-				<p>3. double-check your SPAM filters and SPAM/Junk/Bulk mailboxes</p>
+					</div><!-- .col-md-3 -->
 
-				<p>If it not:</p>
+					<div class="col-md-6 col-sm-12 wow bounceInRight">
+						<h3>Profesional Profile</h3>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+					</div>
 
-				<p>Contact your host and ask them to check PHP mail() setting.</p>
+				</div><!-- .row -->
 
-				<p>If you have any questions please feel free to email <a href="mailto:web-master72@yandex.ru">here</a>.</p>
+			</div><!-- .container -->
 
-				</section>
+		</section>
 
-			</div>
-		</div>
-	</div>
+		<!-- Profile section end -->
+
+		<!-- Callout section start -->
+
+		<section id="stats" class="callout">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3 col-sm-12 hidden-xs wow bounceInLeft">
+						<h3>My Stats</h3>
+					</div>
+
+					<div class="col-md-3 col-sm-4 wow bounceInDown">
+						<div class="stat">
+							<div class="stat-icon">
+								<h2><i class="fa fa-coffee hidden-xs"></i><span class="timer" data-to="32"></span></h2>
+							</div>
+							<h3>Cup of coffee</h3>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 wow bounceInUp">
+						<div class="stat">
+							<div class="stat-icon">
+								<h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999"></span></h2>
+							</div>
+							<h3>Line of code</h3>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 wow bounceInRight">
+						<div class="stat">
+							<div class="stat-icon">
+								<h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="300"></span>+</h2>
+							</div>
+							<h3>Happy customers</h3>
+						</div>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Callout section end -->
+
+		<!-- Services section start -->
+
+		<section id="services" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>What i can do</h2>
+						<p>My Services.</p>
+					</div>
+
+					<div class="col-md-12">
+
+						<div class="row">
+
+							<div class="col-sm-4 wow bounceInLeft">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-pencil"></i>
+									</div>
+									<h4>Text rotator</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInUp">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-image"></i>
+									</div>
+									<h4>Slideshow</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInRight">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-cog"></i>
+									</div>
+									<h4>Easy configure</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- .row -->
+
+						<div class="row">
+
+							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-code"></i>
+									</div>
+									<h4>Clear code</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-desktop"></i>
+									</div>
+									<h4>Responsive design</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-life-ring"></i>
+									</div>
+									<h4>Support</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- .row -->
+
+					</div><!-- .col-md-12 -->
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Services section end -->
+
+		<!-- Callout section start -->
+
+		<section class="callout">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3 hidden-xs wow bounceInLeft">
+						<h3>My status</h3>
+					</div>
+
+					<div class="col-md-9 headline nomargin wow bounceInDown">
+						<h3>I'm currently available for freelance work.</h3>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Callout section end -->
+
+		<!-- Resume section start -->
+
+		<section id="resume" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>Resume</h2>
+						<p>My education and experience.</p>
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row resume-items">
+
+					<div class="col-md-3 wow bounceInLeft">
+						<h3>Education</h3>
+					</div>
+
+					<div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+						<h4>Computer science</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i> Stanford University</h4>
+						<i class="fa fa-calendar"></i> 2013 - 2014
+						<hr class="visible-xs">
+					</div>
+
+					<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+						<h4>Visual designer</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i> St. Patrick University</h4>
+						<i class="fa fa-calendar"></i> 2013 - 2014
+						<hr class="visible-xs">
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row resume-items">
+
+					<div class="col-md-3 wow bounceInLeft">
+						<h3>Experience</h3>
+					</div>
+
+					<div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+						<h4>Front-end developer / php programmer</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i> Google</h4>
+						<i class="fa fa-calendar"></i> 2013 - 2014
+						<hr class="visible-xs">
+					</div>
+
+					<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+						<h4>C# programmer</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i> Microsoft</h4>
+						<i class="fa fa-calendar"></i> 2013 - 2014
+						<hr class="visible-xs">
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row">
+
+					<div class="col-md-6 col-md-offset-3 wow bounceInUp">
+						<a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Resume section end -->
+
+		<!-- Callout section start -->
+
+		<section id="clients" class="callout">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3 hidden-xs wow bounceInLeft">
+						<h3>Customers</h3>
+					</div>
+
+					<div class="col-md-9 wow bounceInRight">
+
+						<div id="owl-clients" class="owl-carousel">
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-3.png" alt="">
+								<h4>Client 1</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-1.png" alt="">
+								<h4>Client 2</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-3.png" alt="">
+								<h4>Client 3</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-1.png" alt="">
+								<h4>Client 4</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-3.png" alt="">
+								<h4>Client 5</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-1.png" alt="">
+								<h4>Client 6</h4>
+							</div>
+
+						</div>
+
+					</div><!-- .col-md-9 -->
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Callout section end -->
+
+		<!-- Portfolio section start -->
+
+		<section id="portfolio" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>Portfolio</h2>
+						<p>My best works.</p>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInLeft">
+						<a href="assets/images/p1.jpg" class="pop-up" title="Caption 1">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p1.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp">
+						<a href="https://vimeo.com/45830194" class="video-pop-up" title="Caption 2">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p2.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInRight">
+						<a href="assets/images/p3.jpg" class="pop-up" title="Caption 3">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p3.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
+						<a href="assets/images/p5.jpg" class="pop-up" title="Caption 4">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p5.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
+						<a href="assets/images/p8.jpg" class="pop-up" title="Caption 5">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p8.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
+						<a href="assets/images/p6.jpg" class="pop-up" title="Caption 6">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p6.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Portfolio section end -->
+
+		<!-- Contact section start -->
+
+		<section id="contact" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInLeft">
+						<h2>Contact Us</h2>
+						<p>Drop us a line or give us a ring. We love to hear you.</p>
+					</div>
+
+					<div class="col-md-6 wow bounceInUp">
+
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+
+						<ul class="icon-list">
+							<li><i class="fa fa-fw fa-map-marker"></i>001 Some Street, Some City, US</li>
+							<li><i class="fa fa-fw fa-phone"></i>123 4567 8910</li>
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">support@site.com</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="">http://www.site.com</a></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-6 wow bounceInRight">
+
+						<form id="contact-form" role="form" novalidate>
+
+							<div class="form-group">
+								<label class="sr-only" for="name">Name</label>
+								<input type="text" id="name" class="form-control" name="name" placeholder="Name" required="">
+								<p class="help-block text-danger"></p>
+							</div>
+
+							<div class="form-group">
+								<label class="sr-only" for="email">Email address</label>
+								<input type="email" id="email" class="form-control" name="email" placeholder="E-mail" required="">
+								<p class="help-block text-danger"></p>
+							</div>
+
+							<div class="form-group">
+								<textarea class="form-control" id="message" name="message" rows="7" placeholder="Your message" required=""></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+
+							<button type="submit" class="btn btn-custom-1">
+								<i class="fa fa-bullhorn icon-before"></i> Send it
+							</button>
+
+						</form>
+
+						<div id="contact-response"></div>
+
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Contact section end -->
+
+		<!-- Footer start -->
+
+		<footer id="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<p class="copy">
+							© 2014 Mark Stone, All Rights Reserved.
+						</p>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</footer>
+
+		<!-- Footer end -->
+
+	</div><!-- .wrapper -->
 
 	<!-- Javascript files -->
 	<!-- jQuery -->
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!--HL -->
-	<script src="assets/js/prettify/prettify.js"></script>
+	<!-- Background slider -->
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<!-- OwlCarousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Modal for portfolio -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Text rotator -->
+	<script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+	<!-- Waypoints -->
+	<script src="assets/js/jquery.waypoints.js"></script>
+	<!-- CountTo -->
+	<script src="assets/js/jquery.countTo.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- Smooth scroll -->
+	<script src="assets/js/smoothscroll.js"></script>
+	<!-- Fitvids -->
+	<script src="assets/js/jquery.fitvids.js"></script>
+	<!-- jqBootstrapValidation -->
+	<script src="assets/js/jqBootstrapValidation.js"></script>
 	<!-- Custom scripts -->
 	<script src="assets/js/custom.js"></script>
 
